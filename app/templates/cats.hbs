@@ -1,0 +1,15 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcom!</h2>
+  <p>
+    Esperamos que encuentres lo que estas buscando.
+    <br>Revisa nuestra lista de agentes especiales.
+  </p>
+  {{#link-to 'about' class="button"}}
+    About Us
+  {{/link-to}}
+</div>
+{{#each model as |catUnit|}}
+  {{file-listing cat=catUnit}}
+{{/each}}
+{{outlet}}
